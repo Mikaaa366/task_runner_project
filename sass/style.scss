@@ -26,6 +26,23 @@ section {
     padding: 100px 0;
 }
 
+.main-title {
+    font-family: $text-sans;
+    font-weight: 700;
+    color: #222222;
+    font-size: $font-5;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-family: $text-serif;
+    color: #777777;
+    font-style: italic;
+    font-size: $font-2;
+    margin-bottom: 80px;
+}
+
+
 /* Header*/
 
 header {
@@ -111,23 +128,6 @@ header {
 /* Services */
 
 .services {
-    text-align: center;
-
-    .main-title {
-        font-family: $text-sans;
-        font-weight: 700;
-        color: #222222;
-        font-size: $font-5;
-        margin-bottom: 20px;
-    }
-    
-    .subtitle {
-        font-family: $text-serif;
-        color: #777777;
-        font-style: italic;
-        font-size: $font-2;
-        margin-bottom: 80px;
-    }
 
     text-align: center;
 
@@ -144,6 +144,7 @@ header {
         font-size: $font-1;
         color: #777777 ;
     }
+    
 
     #icon-basket {
         width: 40px;
@@ -164,4 +165,39 @@ header {
         border-radius: 100%;
         margin-bottom: 20px;
     }
+}
+
+/* Portfolio */
+
+.portfolio {
+    background-color: #f7f7f7;
+    text-align: center;
+    
+    .card {
+        background-color: #ffffff;
+    }
+    
+    img {
+        width: 100%;
+    }
+
+    .card-body {
+        padding: 30px 15px;
+
+        .box-title {
+            color: #333333;
+            font-family: $text-sans;
+            font-size: 18px;
+            font-weight: 900;
+            margin-bottom: 5px;
+        }
+
+        .text {
+            color: #737373;
+            font-family: $text-serif;
+            font-size: 14px;
+            font-style: italic;
+        }
+    }
+
 }
