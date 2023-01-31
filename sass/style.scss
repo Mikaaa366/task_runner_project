@@ -1,0 +1,107 @@
+/* Variables */
+
+$text-logo: 'Wisdom Script', sans-serif;
+$text-serif: 'Droid Serif', sans-serif;
+$text-sans: 'Montserrat', sans-serif;
+$text-desc: 'Roboto Slab', serif;
+
+$font-1: 14px;
+$font-2: 16px;
+$font-3: 18px;
+$font-4: 26px;
+$font-5: 40px;
+$font-6: 75px;
+
+/* Global*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;   
+}
+
+/* Header*/
+
+header {
+    background-image: url("../images/header.jpg");
+	object-fit: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+    .container {
+        width: 1424px;
+        height: 150px;
+    
+        .row {
+            padding-top: 45px;
+        
+            .logo {
+                font-size: $font-4;
+                letter-spacing: 1.3px;
+                font-family: $text-logo;
+                color: #fed136; 
+            }
+        
+            .menu {
+            
+                    list-style-type: none;
+            
+                a {
+                    text-decoration: none;
+                    font-family: $text-sans;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #fff;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0);
+
+                    &:hover {
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .row1 {
+        text-align: center;
+        color: #fff;
+        padding-bottom: 100px;
+
+        h3 {
+            font-family: $text-serif;
+            font-size: $font-5;
+            font-style: italic;
+        }
+
+        h2 {
+            font-family: $text-sans;
+            font-size: $font-6;
+            font-weight: 900;
+            margin: 50px 0 60px;
+        }
+
+        .btn-one {
+            background-color: #fed136;
+            color: #fff;
+            padding: 25px 50px;
+            border: 0;
+            font-family: $text-sans;
+            font-weight: 700;
+            font-size: $font-3;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            background-position: 100% 0;
+            background-size: 300%;
+            transition: all 1s;
+            background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+            
+            &:hover {
+                background-position: 0 100%;
+                color: #fed136;
+            }
+        }
+    }
+}
