@@ -42,7 +42,6 @@ section {
     margin-bottom: 80px;
 }
 
-
 /* Header*/
 
 header {
@@ -65,7 +64,7 @@ header {
         
             .menu {
             
-                    list-style-type: none;
+                list-style-type: none;
             
                 a {
                     text-decoration: none;
@@ -145,7 +144,6 @@ header {
         color: #777777 ;
     }
     
-
     #icon-basket {
         width: 40px;
     }
@@ -221,7 +219,7 @@ footer {
         display: flex;
         justify-content: left;
         align-items: left;
-        gap: 20px;
+        gap: 10px;
     }
 
     li {
@@ -243,4 +241,24 @@ footer {
             }
         }   
     }
+}
+
+/* media */
+
+@media (max-width: 767px) {
+    nav .menu {
+        display: grid;
+    }
+    
+    footer {
+        text-align: center;
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+
+    
 }
